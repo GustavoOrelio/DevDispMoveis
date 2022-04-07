@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/media_aluno/build" />
+      <excludeFolder url="file://$MODULE_DIR$/media_aluno/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/media_aluno/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/solicitar_notas/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/solicitar_notas/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/solicitar_notas/build" />
+      <excludeFolder url="file://$MODULE_DIR$/reprova_falta/build" />
+      <excludeFolder url="file://$MODULE_DIR$/reprova_falta/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/reprova_falta/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/solicitar_dados_disciplina/build" />
+      <excludeFolder url="file://$MODULE_DIR$/solicitar_dados_disciplina/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/solicitar_dados_disciplina/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/solicitar_dados/build" />
+      <excludeFolder url="file://$MODULE_DIR$/solicitar_dados/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/solicitar_dados/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/dart_aplication/build" />
+      <excludeFolder url="file://$MODULE_DIR$/dart_aplication/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/dart_aplication/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/aula_dart/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/aula_dart/build" />
+      <excludeFolder url="file://$MODULE_DIR$/aula_dart/.pub" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
