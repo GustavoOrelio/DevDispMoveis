@@ -17,10 +17,11 @@ void solicitarNotas() {
   nota3 = stdin.readLineSync();
   double notaC = double.parse(nota3!);
 
-  double media = notaA + notaB + notaC / 3;
+  double media = notaA + notaB + notaC;
+  double calcMedia = media / 3;
 
   print("\nA primeira nota do aluno é: $notaA");
   print("\nA segunda nota do aluno é: $notaB");
   print("\nA terceira nota do aluno é: $notaC");
-  print("\nA media das notas do aluno é: $media");
+  print("\nA media das notas do aluno é: $calcMedia");
 }
