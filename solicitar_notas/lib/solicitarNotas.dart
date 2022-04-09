@@ -5,6 +5,10 @@ void solicitarNotas() {
   String? nota2;
   String? nota3;
 
+
+  double menor;
+  double maior;
+
   print("Informe a primeira nota do aluno: ");
   nota1 = stdin.readLineSync();
   double notaA = double.parse(nota1!);
@@ -20,8 +24,37 @@ void solicitarNotas() {
   double media = notaA + notaB + notaC;
   double calcMedia = media / 3;
 
-  print("\nA primeira nota do aluno é: $notaA");
+  if (notaA < notaB) {
+    if (notaB < notaC) {
+      menor = notaA;
+    } else {
+      menor = notaC;
+    }
+  } else {
+    if (notaB < notaC) {
+      menor = notaB;
+    } else {
+      menor = notaC;
+    }
+  }
+
+  if (notaA > notaB) {
+    if (notaB > notaC) {
+      maior = notaA;
+    } else {
+      maior = notaC;
+    }
+  } else {
+    if (notaB > notaC) {
+      maior = notaB;
+    } else {
+      maior = notaC;
+    }
+  }
+  /*  print("\nA primeira nota do aluno é: $notaA");
   print("\nA segunda nota do aluno é: $notaB");
-  print("\nA terceira nota do aluno é: $notaC");
+  print("\nA terceira nota do aluno é: $notaC"); */
+  print("\nA menor nota é: $menor");
   print("\nA media das notas do aluno é: $calcMedia");
+  print("\nA maior nota é: $maior");
 }

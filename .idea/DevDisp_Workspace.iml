@@ -24,6 +24,9 @@
       <excludeFolder url="file://$MODULE_DIR$/aula_dart/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/aula_dart/build" />
       <excludeFolder url="file://$MODULE_DIR$/aula_dart/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/teste/build" />
+      <excludeFolder url="file://$MODULE_DIR$/teste/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/teste/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
