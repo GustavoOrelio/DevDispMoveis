@@ -5,7 +5,7 @@ void show() {
   var resultado = notas();
   print("O aluno está $resultado");
   var salarioTotal = salario;
-  print(salarioTotal);
+  print("$salarioTotal");
 }
 
 String notas() {
@@ -24,7 +24,7 @@ String notas() {
   }
 }
 
-double? salario() {
+String? salario() {
   print("Informe seu salario: ");
   var salario1 = stdin.readLineSync();
   double salario = double.parse(salario1!);
@@ -34,9 +34,9 @@ double? salario() {
   double vale = double.parse(vale1!);
 
   if (vale == 0) {
-    print("Vc recebera seu salario inteiro pois não pegou nenhum vale");
+    return "Vc recebera seu salario inteiro pois não pegou nenhum vale";
   } else {
     double salarioTotal = salario - vale;
-    print("Vc tem $salarioTotal reais disponiveis porque pegou um vale");
+    return "Vc tem $salarioTotal reais disponiveis porque pegou um vale";
   }
 }
