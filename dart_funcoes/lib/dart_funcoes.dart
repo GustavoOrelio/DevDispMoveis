@@ -30,10 +30,8 @@ void show() {
       }
     });
   } else if (opcao == 2) {
-    resultado = interface(nota1, nota2, (double nota1, double nota2) {
-      double media = (nota1 + nota2) / 2;
-      return media;
-    });
+    resultado = interface(
+        nota1, nota2, (double nota1, double nota2) => (nota1 + nota2) / 2);
   } else if (opcao == 3) {
     resultado = interface(nota1, nota2, (double nota1, double nota2) {
       if (nota1 > nota2) {
