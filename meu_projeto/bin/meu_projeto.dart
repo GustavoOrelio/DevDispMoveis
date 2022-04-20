@@ -1,5 +1,15 @@
-import 'package:meu_projeto/meu_projeto.dart' as meu_projeto;
+import 'package:meu_projeto/funcoesComRetornoParametros.dart'
+    as funcoesComRetornoParametros;
+import 'package:meu_projeto/funcoesComRetornoComParametros.dart'
+    as funcoesComRetornoComParametros;
+import 'package:meu_projeto/funcoesRetornoComParametros.dart'
+    as funcoesRetornoComParametros;
+import 'package:meu_projeto/funcoesRetornoParametros.dart'
+    as funcoesRetornoParametros;
 
 void main(List<String> arguments) {
-  meu_projeto.show();
+  funcoesComRetornoParametros.show();
+  funcoesComRetornoComParametros.show();
+  funcoesRetornoComParametros.show();
+  funcoesRetornoParametros.show();
 }
