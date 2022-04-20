@@ -19,40 +19,55 @@ void show() {
   double nota1 = double.parse(stdin.readLineSync()!);
   print('Nota 2: ');
   double nota2 = double.parse(stdin.readLineSync()!);
-  String resultado = interface(opcao, nota1, nota2);
+  String resultado = "";
+  if (opcao == 1) {
+    resultado = interface(nota1, nota2, (double nota1, double nota2) {
+      double media = (nota1 + nota2) / 2;
+      if (media >= 6) {
+        return 'Aprovado';
+      } else {
+        return 'Reprovado';
+      }
+    });
+  } else if (opcao == 2) {
+    resultado = interface(nota1, nota2, (double nota1, double nota2) {
+      double media = (nota1 + nota2) / 2;
+      return media;
+    });
+  } else if (opcao == 3) {
+    resultado = interface(nota1, nota2, (double nota1, double nota2) {
+      if (nota1 > nota2) {
+        return nota1;
+      } else {
+        return nota2;
+      }
+    });
+  }
   print(resultado);
 }
 
-String interface(int opcao, double nota1, nota2) {
-  if (opcao == 1) {
-    return verificarAprovacao(nota1, nota2);
-  } else if (opcao == 2) {
-    return 'A média é ${calcularMedia(nota1, nota2)}';
-  } else if (opcao == 3) {
-    return 'A maior nota é ${maiorNota(nota1, nota2)}';
-  } else {
-    return 'Opção invalida';
-  }
+String interface(double nota1, nota2, Function minhaFuncao) {
+  return minhaFuncao(nota1, nota2);
 }
 
-String verificarAprovacao(double nota1, double notas2) {
-  double media = (nota1 + notas2) / 2;
+/* String verificarAprovacao(double nota1, double nota2) {
+  double media = (nota1 + nota2) / 2;
   if (media >= 6) {
     return 'Aprovado';
   } else {
     return 'Reprovado';
   }
-}
+} */
 
-double calcularMedia(double nota1, double nota2) {
+/* double calcularMedia(double nota1, double nota2) {
   double media = (nota1 + nota2) / 2;
   return media;
-}
+} */
 
-double maiorNota(double nota1, double nota2) {
+/* double maiorNota(double nota1, double nota2) {
   if (nota1 > nota2) {
     return nota1;
   } else {
     return nota2;
   }
-}
+} */
