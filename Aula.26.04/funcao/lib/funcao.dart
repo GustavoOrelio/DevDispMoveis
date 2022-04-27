@@ -3,6 +3,7 @@ void main() {
   verificarAprovacao(6, 8);
 
   verificarAprovacaoComParamNomeado(nota1: 8, nota2: 9, mediaAprovacao: 7);
+  verificarAprovacaoComParamNomeado(nota2: 4, mediaAprovacao: 5, nota1: 7);
 }
 
 String verificarAprovacao(double nota1, double nota2,
