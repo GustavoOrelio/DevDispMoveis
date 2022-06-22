@@ -100,13 +100,13 @@ class Aluno {
   }
 }
 
-class Professor {
+class Cliente {
   String nome;
   String CPF;
   String? Email;
   String telefone;
 
-  Professor({
+  Cliente({
     required this.nome,
     required this.CPF,
     required this.telefone,
@@ -122,5 +122,18 @@ class Produto {
     required this.nomeProduto,
     required this.quantidadeProduto,
     required this.codigoProduto,
+  });
+}
+
+class Vendedor {
+  String nome;
+  String CPF;
+  String? Email;
+  String telefone;
+
+  Vendedor({
+    required this.nome,
+    required this.CPF,
+    required this.telefone,
   });
 }
