@@ -103,6 +103,24 @@ class Aluno {
 class Professor {
   String nome;
   String CPF;
-  String Email;
-  
+  String? Email;
+  String telefone;
+
+  Professor({
+    required this.nome,
+    required this.CPF,
+    required this.telefone,
+  });
+}
+
+class Produto {
+  String nomeProduto;
+  int quantidadeProduto;
+  String codigoProduto;
+
+  Produto({
+    required this.nomeProduto,
+    required this.quantidadeProduto,
+    required this.codigoProduto,
+  });
 }
