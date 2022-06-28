@@ -1,3 +1,4 @@
+
 main() {
   var minhaClasse = MinhaClasse();
   minhaClasse.meuAtributo = 'teste';
@@ -100,40 +101,35 @@ class Aluno {
   }
 }
 
-class Cliente {
-  String nome;
-  String CPF;
-  String? Email;
-  String telefone;
+bool validarCpf(String cpf){
+    
+    int numerosCpf = 0;
+    int contador = 10;
+    int primeiroValorCpf = int.parse(cpf[1]);
+    double somarDividir;
 
-  Cliente({
-    required this.nome,
-    required this.CPF,
-    required this.telefone,
-  });
-}
+    if(cpf.length == 11){
+      for(int i=0;i< cpf.length - 2; i++){
+        int valorConvertidoCPF = int.parse(cpf[i]);
+        numerosCpf += (contador * valorConvertidoCPF);
+        contador --;
+      }
+      somarDividir = (numerosCpf * 10) % 11;
 
-class Produto {
-  String nomeProduto;
-  int quantidadeProduto;
-  String codigoProduto;
+      if(somarDividir == primeiroValorCpf){
+        return true;
+      }else if(somarDividir == 10){
+        somarDividir = 0;
+        if(somarDividir == primeiroValorCpf){
+          return true;
+        }else{
+          return false;
+        }
+      }else{
+        return false;
+      }
+    }else{
+      return false;
+    }   
+  }
 
-  Produto({
-    required this.nomeProduto,
-    required this.quantidadeProduto,
-    required this.codigoProduto,
-  });
-}
-
-class Vendedor {
-  String nome;
-  String CPF;
-  String? Email;
-  String telefone;
-
-  Vendedor({
-    required this.nome,
-    required this.CPF,
-    required this.telefone,
-  });
-}
